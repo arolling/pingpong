@@ -32,12 +32,38 @@
           </form>
           <!-- END INPUT FORM -->
           <!-- OUTPUT AREA -->
-          <div id="output">
-          </div>
-          <!-- END OUTPUT AREA -->
-        </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div id="output">
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="hideme" id="ping">
+                <h1>Ping Pong</h1>
+                <p class="lead">A simple game of call and response. You give me a number, and I answer back according to some rules:</p>
+                <ol>
+                  <li>Numbers divisible by 3 will become "ping"</li>
+                  <li>Numbers divisible by 5 will become "pong"</li>
+                  <li>Numbers divisible by 15 will become "pingpong"</li>
+                </ol>
+              </div>
+
+              <div class="hideme" id="primer">
+                <h1>Sieve of Eratosthenes</h1>
+                <p class="lead">The Sieve of Eratosthenes is a method to discover all the primes below a given number. For more details, see <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">here.</a></p>
+              </div>
+
+              <div class="hideme" id="rome">
+                <h1>Roman Numerals</h1>
+                <p class="lead">We've all seen Roman Numerals, but the <a href="https://en.wikipedia.org/wiki/Roman_numerals">details</a> of how to produce them can be confusing. Convert any number below 4000 to its Roman equivalent!</p>
+              </div>
+            </div>
+          </div><!-- END OUTPUT AREA -->
+        </div><!-- END GAME COLUMN -->
+
         <div class="col-sm-3" id="aboutMe">
-          <h3>About PingPong</h3>
+          <h3>About Number Games</h3>
           <h4>Created By:</h4>
           <p>Abigail Rolling</p>
           <p>Sieve of Eratosthenes in collaboration with Torrance Stratton</p>

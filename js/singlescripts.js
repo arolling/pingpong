@@ -126,6 +126,7 @@ var romanConverter = function(number){
 $(document).ready(function() {
   $("button#pingpongSubmit").click(function(event) {
     event.preventDefault();
+    $(".hideme").hide();
     var upperLimit = parseInt($("#limitInput").val());
     if (Math.sign(upperLimit) === 1) {
       var pingpongList = pingpong(upperLimit);
@@ -136,6 +137,7 @@ $(document).ready(function() {
         }
         return "<ul>" + outputContent + "</ul>";
       }); // END OUTPUT WRITING FUNCTION
+      $("#ping").show();
     } else {
       console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");
@@ -144,6 +146,7 @@ $(document).ready(function() {
 
   $("button#primeSubmit").click(function(event) {
     event.preventDefault();
+    $(".hideme").hide();
     var upperLimit = parseInt($("#limitInput").val());
     if (Math.sign(upperLimit) === 1) {
       var primeList = primeFinder(upperLimit);
@@ -154,6 +157,7 @@ $(document).ready(function() {
         }
         return "<ul>" + outputContent + "</ul>";
       }); // END OUTPUT WRITING FUNCTION
+      $("#primer").show();
     } else {
       console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");
@@ -162,10 +166,12 @@ $(document).ready(function() {
 
   $("button#romanSubmit").click(function(event) {
     event.preventDefault();
+    $(".hideme").hide();
     var arabicInteger = parseInt($("#limitInput").val());
     if (Math.sign(arabicInteger) === 1) {
       var romanInteger = romanConverter(arabicInteger);
       $("div#output").html("<h3>" + romanInteger + "</h3>");
+      $("#rome").show();
     } else {
       console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");

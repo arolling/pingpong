@@ -1,3 +1,7 @@
+.hideme {
+  display: none;
+}
+
 input {
   margin-left: 5px;
 }

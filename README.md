@@ -5,6 +5,7 @@
 #### Alternately, play one of several number-based games
 
 #### By Abigail Rolling
+## With contributions from Torrance Stratton & Molly Curtin 
 
 ## Description
 
