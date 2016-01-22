@@ -9,7 +9,6 @@
     </script>
     <script src="js/scripts.js"></script>
     <title>Play PingPong!</title>
-
   </head>
   <body>
     <div class="container">
@@ -17,20 +16,37 @@
         <h1>Do You Want to Play a Game?</h1>
       </div>
 
-      <!-- INPUT FORM -->
-      <form class="form-inline" id="inputForm">
-        <div class="form-group">
-          <label for="limitInput">Pick a whole number:</label>
-          <input type="text" id="limitInput" class="form-control">
+      <div class="row">
+        <div class="col-sm-9">
+          <p class="lead">Let's play a simple game of call and response. You give me a number, and I will answer back according to some rules:</p>
+          <ol>
+            <li>Numbers divisible by 3 will become "ping"</li>
+            <li>Numbers divisible by 5 will become "pong"</li>
+            <li>Numbers divisible by 15 will become "pingpong"</li>
+          </ol>
+
+          <!-- INPUT FORM -->
+          <form class="form-inline" id="inputForm">
+            <div class="form-group">
+              <label for="limitInput">Pick a whole number:</label>
+              <input type="text" id="limitInput" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-submit" id="limitSubmit">Play!</button>
+          </form>
+          <!-- END INPUT FORM -->
+          <!-- OUTPUT AREA -->
+          <div id="output">
+          </div>
+          <!-- END OUTPUT AREA -->
         </div>
-        <button type="submit" class="btn btn-submit" id="limitSubmit">Play!</button>
-      </form>
-      <!-- END INPUT FORM -->
-
-      <div id="output">
-
-      </div>
-
+        <div class="col-sm-3" id="aboutMe">
+          <h3>About PingPong</h3>
+          <h5>Created By:</h5>
+          <p>Abigail Rolling</p>
+          <h5>Github:</h5>
+          <a href="http://github.com/arolling/">arolling</a>
+        </div>
+      </div> <!-- END ROW -->
     </div> <!-- END MAIN BODY CONTAINER -->
   </body>
 </html>

@@ -1,3 +1,23 @@
 input {
   margin-left: 5px;
 }
+
+li {
+  font-size: 120%;
+}
+
+#aboutMe {
+  background-color: #B260CC;
+  color: #4B3D4F;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+a {
+  color: #F1C4FF;
+}
+
+.jumbotron {
+  background-color: #6F3C7F;
+  color: #F1C4FF;
+}
