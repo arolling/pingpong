@@ -18,7 +18,7 @@
 
       <div class="row">
         <!-- Start Ping Pong game -->
-        <div class="col-sm-5">
+        <div class="col-md-4">
           <h1>Ping Pong</h1>
           <p class="lead">Let's play a simple game of call and response. You give me a number, and I will answer back according to some rules:</p>
           <ol>
@@ -33,7 +33,7 @@
               <label for="pingpongInput">Pick a whole number:</label>
               <input type="text" id="pingpongInput" class="form-control">
             </div>
-            <button type="submit" class="btn btn-default" id="pingpongSubmit">Play!</button>
+            <button type="submit" class="btn btn-default" id="pingpongSubmit">Play PingPong!</button>
           </form>
           <!-- END INPUT FORM -->
           <!-- OUTPUT AREA -->
@@ -43,7 +43,7 @@
         </div>
         <!-- END PING PONG GAME -->
         <!-- Start Prime Sifter -->
-        <div class="col-sm-5">
+        <div class="col-md-4">
           <h1>Sieve of Eratosthenes</h1>
           <p class="lead">The Sieve of Eratosthenes is a method to discover all the primes below a given number. For more details, see <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">here.</a></p>
 
@@ -54,7 +54,7 @@
               <label for="primeInput">Pick a whole number:</label>
               <input type="text" id="primeInput" class="form-control">
             </div>
-            <button type="submit" class="btn btn-default" id="primeSubmit">Play!</button>
+            <button type="submit" class="btn btn-default" id="primeSubmit">Find Primes!</button>
           </form>
           <!-- END INPUT FORM -->
           <!-- OUTPUT AREA -->
@@ -63,15 +63,38 @@
           <!-- END OUTPUT AREA -->
         </div>
         <!-- END PRIME SIFTING GAME -->
-        <div class="col-sm-2" id="aboutMe">
-          <h3>About Number Games</h3>
-          <h4>Created By:</h4>
-          <p>Abigail Rolling</p>
-          <p>Sieve of Eratosthenes in collaboration with Torrance Stratton</p>
-          <h4>Github:</h4>
-          <a href="http://github.com/arolling/">arolling</a>
+        <!-- Start Roman Numeral Converter -->
+        <div class="col-md-4">
+          <h1>Roman Numerals</h1>
+          <p class="lead">We've all seen Roman Numerals, but the <a href="https://en.wikipedia.org/wiki/Roman_numerals">details</a> of how to produce them can be confusing. Pick any number below 4000 to see its Roman equivalent below!</p>
+
+
+          <!-- INPUT FORM -->
+          <form class="form-inline" id="romanForm">
+            <div class="form-group">
+              <label for="romanInput">Pick a whole number:</label>
+              <input type="text" id="romanInput" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default" id="romanSubmit">Romanize!</button>
+          </form>
+          <!-- END INPUT FORM -->
+          <!-- OUTPUT AREA -->
+          <div id="romanOutput">
+          </div>
+          <!-- END OUTPUT AREA -->
         </div>
+        <!-- End Roman Numeral Converter -->
       </div> <!-- END ROW -->
+      <div id="aboutMe">
+        <h3>About Number Games</h3>
+        <h4>Created By:</h4>
+        <p>Abigail Rolling</p>
+        <p>Sieve of Eratosthenes in collaboration with Torrance Stratton</p>
+        <p>Roman Numeral converter in collaboration with Molly Curtin</p>
+        <h4>Github:</h4>
+        <a href="http://github.com/arolling/">arolling</a>
+      </div>
+
     </div> <!-- END MAIN BODY CONTAINER -->
   </body>
 </html>

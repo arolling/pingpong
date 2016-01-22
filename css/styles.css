@@ -7,10 +7,11 @@ li {
 }
 
 #aboutMe {
-  background-color: #B260CC;
-  color: #4B3D4F;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: #F1C4FF;
+  color: #65526B;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 7px;
 }
 
 a {

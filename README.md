@@ -10,7 +10,10 @@
 
 This site takes a positive integer from a user and returns a list of all whole numbers up to and including that integer; it replaces all multiples of 3 with 'ping', all multiples of 5 with 'pong', and all multiples of 15 with 'pingpong'.
 
-Alternately, the user can choose to play PingPong or use the Sieve of Eratosthenes to generate a list of prime numbers below a chosen integer.
+Alternately, the user can choose to:
+1. Play PingPong
+2. Use the Sieve of Eratosthenes to generate a list of prime numbers below a chosen integer
+3. Convert an arabic number into its Roman equivalent
 
 ## Known Bugs
 
