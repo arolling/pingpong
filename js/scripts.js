@@ -28,7 +28,7 @@ $(document).ready(function() {
     console.log(upperLimit);
     var pingpongList = pingpong(upperLimit);
     console.log(pingpongList);
-    $("#outputList").text(pingpongList);
+    $("span#outputList").html('<li>' + pingpongList + '</li>');
   });
 
 
