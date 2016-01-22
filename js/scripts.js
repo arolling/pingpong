@@ -17,6 +17,19 @@ var pingpong = function(upperLimit) {
       numbersList.splice(i, 1, "ping");
     }
   }
-  console.log(numbersList);
   return numbersList;
 }
+// END BUSINESS LOGIC
+
+$(document).ready(function() {
+  $("form#inputForm").submit(function(event) {
+    event.preventDefault();
+    var upperLimit = parseInt($("#limitInput").val());
+    console.log(upperLimit);
+    var pingpongList = pingpong(upperLimit);
+    console.log(pingpongList);
+    $("#outputList").text(pingpongList);
+  });
+
+
+});

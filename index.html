@@ -8,10 +8,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Play PingPong!</title>
 
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Do You Want to Play a Game?</h1>
+      </div>
 
+      <!-- INPUT FORM -->
+      <form class="form-inline" id="inputForm">
+        <div class="form-group">
+          <label for="limitInput">Pick a whole number:</label>
+          <input type="number" id="limitInput" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-submit" id="limitSubmit">Play!</button>
+      </form>
+      <!-- END INPUT FORM -->
+
+      <div class="output">
+        <ul>
+          <li><span id="outputList"></span></li>
+        </ul>
+
+      </div>
+
+    </div> <!-- END MAIN BODY CONTAINER -->
   </body>
 </html>
