@@ -3,7 +3,11 @@
 }
 
 input {
-  margin-left: 5px;
+  margin: 5px;
+}
+
+#output, #pingpongOutput, #primeOutput, #romanOutput {
+  margin-top: 15px;
 }
 
 li {
@@ -24,6 +28,7 @@ a {
 
 .btn {
   background-color: #DE78FF;
+  margin: 2px;
 }
 
 .jumbotron {
