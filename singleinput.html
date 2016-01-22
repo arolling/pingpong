@@ -7,8 +7,8 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
-    <script src="js/scripts.js"></script>
-    <title>Play PingPong!</title>
+    <script src="js/singlescripts.js"></script>
+    <title>Pick Your Game!</title>
   </head>
   <body>
     <div class="container">
@@ -18,12 +18,7 @@
 
       <div class="row">
         <div class="col-sm-9">
-          <p class="lead">Let's play a simple game of call and response. You give me a number, and I will answer back according to some rules:</p>
-          <ol>
-            <li>Numbers divisible by 3 will become "ping"</li>
-            <li>Numbers divisible by 5 will become "pong"</li>
-            <li>Numbers divisible by 15 will become "pingpong"</li>
-          </ol>
+          <p class="lead">All you have to do is pick a number, pick a game, and get a surprise!</p>
 
           <!-- INPUT FORM -->
           <form class="form-inline" id="inputForm">
@@ -31,7 +26,9 @@
               <label for="limitInput">Pick a whole number:</label>
               <input type="text" id="limitInput" class="form-control">
             </div>
-            <button type="submit" class="btn btn-default" id="limitSubmit">Play!</button>
+            <button class="btn btn-default" id="pingpongSubmit">Play PingPong!</button>
+            <button class="btn btn-default" id="primeSubmit">Find the Primes!</button>
+            <button class="btn btn-default" id="romanSubmit">Romanize!</button>
           </form>
           <!-- END INPUT FORM -->
           <!-- OUTPUT AREA -->
@@ -43,13 +40,15 @@
           <h3>About PingPong</h3>
           <h4>Created By:</h4>
           <p>Abigail Rolling</p>
+          <p>Sieve of Eratosthenes in collaboration with Torrance Stratton</p>
+          <p>Roman Numeral converter in collaboration with Molly Curtin</p>
           <h4>Github:</h4>
           <a href="http://github.com/arolling/">arolling</a>
-          <h4>Alternate Version:</h4>
+          <h4>Alternate Versions:</h4>
           <ul>
             <li><a href="multigames.html">Number Games</a></li>
-            <li><a href="singleinput.html">Pick Your Poison</a></li>
-          </ul>
+            <li><a href="index.html">Play Ping Pong</a></li>
+          <ul>
         </div>
       </div> <!-- END ROW -->
     </div> <!-- END MAIN BODY CONTAINER -->
