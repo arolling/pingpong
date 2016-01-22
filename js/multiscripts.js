@@ -51,16 +51,18 @@ var findNotPrimes = function(prime, rootLimit, limitArray, limit) {
 var primeFinder = function(limit) {
  var limitArray = populateArray(limit);
  var rootLimit = rootFinder(limit);
- console.log(rootLimit);
  delete limitArray[0];
  delete limitArray[1];
  for (var i=2; i < rootLimit; i++) {
    findNotPrimes(i, rootLimit, limitArray, limit);
-   console.log(limitArray);
  }
- return limitArray;
+ var filteredArray = limitArray.filter(deHoler);
+ return filteredArray;
 }
 
+var deHoler = function(value) {
+  return value >= 1;
+}
 // END PRIME SIFTING FUNCTION
 
 
@@ -101,6 +103,6 @@ $(document).ready(function() {
       console.log("invalid");
       $("div#primeOutput").html("<h2>Please enter a positive integer!</h2>");
     } //END ELSE STATEMENT
-  }); //END pingpong FORM INPUT FUNCTION
+  }); //END prime FORM INPUT FUNCTION
 
 }); //END DOCUMENT READY FUNCTION
