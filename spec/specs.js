@@ -4,9 +4,20 @@ describe("createNumberList", function () {
   });
 });
 
-// describe("findMultiples", function () {
-//
-// });
+describe("findMultiples", function () {
+  it("will find multiples of 15 in a list of 1-x", function() {
+    expect(findMultiples(30)).to.eql([15,30]);
+  });
+
+  it("will find multiples of 5 in a list of 1-x", function() {
+    expect(findMultiples(14)).to.eql([5,10]);
+  });
+
+  it("will find multiples of 3 in a list of 1-x", function() {
+    expect(findMultiples(10)).to.eql([3,6,9]);
+  });
+
+});
 //
 // describe("pingpong", function () {
 //
