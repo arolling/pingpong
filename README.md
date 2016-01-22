@@ -12,7 +12,7 @@ This site takes a positive integer from a user and returns a list of all whole n
 
 ## Known Bugs
 
-Does not currently perform any error handling for negative values or unexpected input. Also, output is unformatted.
+If input begins with an integer, it will accept it even if later characters are not numbers.
 
 ## Support and contact details
 

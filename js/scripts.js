@@ -25,17 +25,18 @@ $(document).ready(function() {
   $("form#inputForm").submit(function(event) {
     event.preventDefault();
     var upperLimit = parseInt($("#limitInput").val());
-    console.log(upperLimit);
-    var pingpongList = pingpong(upperLimit);
-    console.log(pingpongList);
-    var outputContent = '';
-    $("span#outputList").html(function() {
-      for (var i=0; i < pingpongList.length; i++) {
-        outputContent += '<li>' + pingpongList[i] + '</li>';
-      }
-      console.log(outputContent);
-      return outputContent;
-    });
-
+    if (Math.sign(upperLimit) === 1) {
+      var pingpongList = pingpong(upperLimit);
+      var outputContent = '';
+      $("div#output").html(function() {
+        for (var i=0; i < pingpongList.length; i++) {
+          outputContent += '<li>' + pingpongList[i] + '</li>';
+        }
+        return "<ul>" + outputContent + "</ul>";
+      }); // END OUTPUT WRITING FUNCTION
+    } else {
+      console.log("invalid");
+      $("div#output").html("<h2>Please enter a positive integer!</h2>");
+    } //END ELSE STATEMENT
   }); //END FORM INPUT FUNCTION
 }); //END DOCUMENT READY FUNCTION
