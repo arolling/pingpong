@@ -28,8 +28,14 @@ $(document).ready(function() {
     console.log(upperLimit);
     var pingpongList = pingpong(upperLimit);
     console.log(pingpongList);
-    $("span#outputList").html('<li>' + pingpongList + '</li>');
-  });
+    var outputContent = '';
+    $("span#outputList").html(function() {
+      for (var i=0; i < pingpongList.length; i++) {
+        outputContent += '<li>' + pingpongList[i] + '</li>';
+      }
+      console.log(outputContent);
+      return outputContent;
+    });
 
-
-});
+  }); //END FORM INPUT FUNCTION
+}); //END DOCUMENT READY FUNCTION
