@@ -124,8 +124,10 @@ var romanConverter = function(number){
 // END BUSINESS LOGIC
 
 $(document).ready(function() {
+  var counter = 0;
   $("button#pingpongSubmit").click(function(event) {
     event.preventDefault();
+    counter++;
     $(".hideme").hide();
     var upperLimit = parseInt($("#limitInput").val());
     if (Math.sign(upperLimit) === 1) {
@@ -139,13 +141,17 @@ $(document).ready(function() {
       }); // END OUTPUT WRITING FUNCTION
       $("#ping").show();
     } else {
-      console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");
     } //END ELSE STATEMENT
+    console.log(counter);
+    if (counter > 6) {
+      $("#easteregg").show();
+    }
   }); //END pingpong FORM INPUT FUNCTION
 
   $("button#primeSubmit").click(function(event) {
     event.preventDefault();
+    counter++;
     $(".hideme").hide();
     var upperLimit = parseInt($("#limitInput").val());
     if (Math.sign(upperLimit) === 1) {
@@ -159,13 +165,14 @@ $(document).ready(function() {
       }); // END OUTPUT WRITING FUNCTION
       $("#primer").show();
     } else {
-      console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");
     } //END ELSE STATEMENT
+    console.log(counter);
   }); //END prime FORM INPUT FUNCTION
 
   $("button#romanSubmit").click(function(event) {
     event.preventDefault();
+    counter++;
     $(".hideme").hide();
     var arabicInteger = parseInt($("#limitInput").val());
     if (Math.sign(arabicInteger) === 1) {
@@ -173,9 +180,9 @@ $(document).ready(function() {
       $("div#output").html("<h3>" + romanInteger + "</h3>");
       $("#rome").show();
     } else {
-      console.log("invalid");
       $("div#output").html("<h2>Please enter a positive integer!</h2>");
     } //END ELSE STATEMENT
+    console.log(counter);
   }); //END Roman FORM INPUT FUNCTION
 
 }); //END DOCUMENT READY FUNCTION
